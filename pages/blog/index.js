@@ -1,11 +1,16 @@
 import React from "react";
 import Head from "next/head";
-
-import Hero from "@/components/pages/hero/Hero";
 import Header from "@/components/baseWrapper/Header";
 import Footer from "@/components/baseWrapper/Footer";
+import BlogList from "@/components/pages/blog/BlogList";
+import { getMarkdownFiles } from "@/utility/getMarkdownFiles";
 
-export default function Home() {
+export async function getStaticProps() {
+  const markdownFiles = await getMarkdownFiles();
+  return { props: { markdownFiles } };
+}
+
+export default function Blog(props) {
   return (
     <div className="min-w-full overflow-x-hidden">
       <Head>
@@ -19,8 +24,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+
       <div className="min-h-screen min-w-full mx-auto">
-        <Hero />
+        <BlogList blogs={props.markdownFiles} />
       </div>
       <Footer />
     </div>

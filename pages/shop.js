@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
-
 import Hero from "@/components/pages/hero/Hero";
 import Header from "@/components/baseWrapper/Header";
 import Footer from "@/components/baseWrapper/Footer";
+import Shop from "@/components/pages/Shop";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <Header />
       <div className="min-h-screen min-w-full mx-auto">
-        <Hero />
+        <Shop />
       </div>
       <Footer />
     </div>
