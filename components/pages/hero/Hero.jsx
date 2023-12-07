@@ -11,18 +11,13 @@ export default function Hero({}) {
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
           <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-              {"We didn't reinvent the wheel"}
+              What is Epigenetics
             </h2>
             <p class="mb-4">
-              We are strategists, designers and developers. Innovators and
-              problem solvers. Small enough to be simple and quick, but big
-              enough to deliver the scope you want at the pace you need. Small
-              enough to be simple and quick, but big enough to deliver the scope
-              you want at the pace you need.
-            </p>
-            <p>
-              We are strategists, designers and developers. Innovators and
-              problem solvers. Small enough to be simple and quick.
+              Epigenetics simply implies that, the qualities (i.e, desirable
+              traits) of each and every life on Earth improves on stunnes based
+              on the interaction with our surroundings and these epigenetics
+              modifications undergone gets passed on to our children.
             </p>
           </div>
           <div class="grid grid-cols-2 gap-4 mt-8">
