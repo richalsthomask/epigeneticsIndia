@@ -15,11 +15,11 @@ export default function Blog(props) {
     <div className="min-w-full overflow-x-hidden">
       <Head>
         <title>
-          Help Squad - Handyman in Los Angeles, San Francisco and OC
+          EpigeneticsIndia - Handyman in Los Angeles, San Francisco and OC
         </title>
         <meta
           name="description"
-          content="Help Squad handyman service has been servicing Los Angeles, San Francisco and Orange County for over 12 years. Whether you need a remodel or home repair, Help Squad has you covered."
+          content="EpigeneticsIndia handyman service has been servicing Los Angeles, San Francisco and Orange County for over 12 years. Whether you need a remodel or home repair, EpigeneticsIndia has you covered."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

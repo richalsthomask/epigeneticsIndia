@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { contact_info } from "@/data/contactInfo";
 import { social_info } from "@/data/socialInfo";
+import Link from "next/link";
 
 const navigation = [
   { title: "Home", link: "/" },
@@ -10,16 +11,7 @@ const navigation = [
   { title: "Courses", link: "/course" },
 ];
 
-export default function Footer({ gtmTriggerType }) {
-  const gtm_trigger = (triggeree) => {
-    if (gtmTriggerType === "HOME_PAGE") {
-      if (triggeree === "E-mail") return "home_footer_email";
-      else if (triggeree === "Phone") return "home_footer_phone";
-      else return "";
-    }
-    return "";
-  };
-
+export default function Footer({}) {
   return (
     <footer
       style={{ backgroundColor: "#FCFCFC" }}
@@ -45,14 +37,14 @@ export default function Footer({ gtmTriggerType }) {
             </p>
             <div className="mt-1 flex space-x-4 opacity-60">
               {social_info.map((item, index) => (
-                <a
+                <Link
                   key={index}
                   href={item.link}
                   className="bg-zinc-300 rounded-full p-2 text-gray-800 hover:text-yellow-500"
                 >
                   <span className="sr-only">{item.title}</span>
                   <item.icon className="h-4 w-4" aria-hidden="true" />
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -73,12 +65,12 @@ export default function Footer({ gtmTriggerType }) {
                       key={index}
                       className="flex justify-center md:justify-start items-center"
                     >
-                      <a
-                        href={item.href}
+                      <Link
+                        href={item.link}
                         className="text-sm transform delay-100 hover:text-yellow-500"
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -95,13 +87,11 @@ export default function Footer({ gtmTriggerType }) {
                 <div className="mt-4 space-y-4 opacity-70 flex flex-col items-center md:items-start">
                   {contact_info.map((item, index) => (
                     <div key={index}>
-                      <a
+                      <Link
                         href={item.link}
                         target={item.name === "Address" ? "_blank" : ""}
                         className={
                           "text-sm transform delay-100 flex flex-row items-start justify-center gap-2 " +
-                          gtm_trigger(item.name) +
-                          " " +
                           (item.link === "#"
                             ? "cursor-default"
                             : "hover:text-yellow-500")
@@ -114,7 +104,7 @@ export default function Footer({ gtmTriggerType }) {
                           }
                         />{" "}
                         <div className="ml-1"> {item.value}</div>
-                      </a>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -124,22 +114,21 @@ export default function Footer({ gtmTriggerType }) {
         </div>
         <div className="mt-10 w-full mx-auto flex flex-row justify-between">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Help Squad | Contractor License:
-            1039023. All rights reserved
+            © {new Date().getFullYear()} EpigeneticsIndia | All rights reserved
           </p>
-          <div className="flex flex-row gap-2 text-xs text-gray-500">
-            <a className="hover:text-yellow-500" href="/terms">
+          {/* <div className="flex flex-row gap-2 text-xs text-gray-500">
+            <Link className="hover:text-yellow-500" href="/terms">
               Terms & Conditions
-            </a>{" "}
+            </Link>{" "}
             |{" "}
-            <a
+            <Link
               className="hover:text-yellow-500"
               target="_blank"
               href="/privacy-policy.html"
             >
               Privacy Policy
-            </a>
-          </div>
+            </Link>
+          </div> */}
         </div>
       </div>
     </footer>

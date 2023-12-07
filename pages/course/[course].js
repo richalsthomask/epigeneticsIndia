@@ -25,7 +25,7 @@ export default function Location(data) {
 }
 
 export async function getStaticPaths() {
-  const courses = ["a", "ass"];
+  const courses = [];
   const paths = courses.map((course) => {
     return { params: { course } };
   });
@@ -37,9 +37,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const locationData = {
-    a: {},
-  };
+  const locationData = {};
   return {
     props: locationData[params.course],
   };

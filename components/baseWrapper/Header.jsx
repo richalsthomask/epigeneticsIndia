@@ -21,14 +21,14 @@ export default function Header({ className }) {
   return (
     <div className="w-full absolute z-10">
       <div className="lg:hidden flex flex-row justify-between items-center gap-4 w-full py-5 px-5 border-b">
-        <a href="/" className="cursor-pointer">
+        <Link href="/" className="cursor-pointer">
           <Image
             src="/helpsquad-logo-orange-navy.png"
             alt="Logo"
             width="130"
             height="36"
           />
-        </a>
+        </Link>
         {pathname !== "/blog" && <BlogSearch />}
         <div
           onClick={() => {
@@ -76,7 +76,7 @@ export default function Header({ className }) {
                     className="relative z-30 inline-block"
                   >
                     <Menu.Button className="mr-5 transform delay-100 duration-100 cursor-pointer hover:opacity-70">
-                      <a
+                      <Link
                         style={{
                           color: "#211C52",
                           fontWeight: "500",
@@ -84,7 +84,7 @@ export default function Header({ className }) {
                         className="flex items-center gap-1"
                       >
                         <span>Locations</span>
-                      </a>
+                      </Link>
                     </Menu.Button>
                   </Menu>
                 );

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function CourseList({}) {
   return (
     <section class="mt-20 bg-white dark:bg-gray-900">
@@ -28,7 +30,7 @@ export default function CourseList({}) {
               <span class="text-sm">14 days ago</span>
             </div>
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              <a href="#">How to quickly deploy a static website</a>
+              <Link href="#">How to quickly deploy a static website</Link>
             </h2>
             <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
               Static websites are now used to bootstrap lots of websites and are
@@ -45,7 +47,7 @@ export default function CourseList({}) {
                 />
                 <span class="font-medium dark:text-white">Jese Leos</span>
               </div>
-              <a
+              <Link
                 href="#"
                 class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
               >
@@ -62,7 +64,7 @@ export default function CourseList({}) {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </article>
           <article class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -86,7 +88,7 @@ export default function CourseList({}) {
               <span class="text-sm">14 days ago</span>
             </div>
             <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              <a href="#">Our first project with React</a>
+              <Link href="#">Our first project with React</Link>
             </h2>
             <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
               Static websites are now used to bootstrap lots of websites and are
@@ -103,7 +105,7 @@ export default function CourseList({}) {
                 />
                 <span class="font-medium dark:text-white">Bonnie Green</span>
               </div>
-              <a
+              <Link
                 href="#"
                 class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
               >
@@ -120,7 +122,7 @@ export default function CourseList({}) {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </article>
         </div>

@@ -70,19 +70,19 @@ export default function BlogPage({ blog, author }) {
               </p>
               <div className="flex flex-row items-center flex-wrap gap-5">
                 {author.twitter && (
-                  <a href={author.twitter} className="hover:opacity-60">
+                  <Link href={author.twitter} className="hover:opacity-60">
                     <TwitterIcon className="h-6" />
-                  </a>
+                  </Link>
                 )}
                 {author.facebook && (
-                  <a href={author.facebook} className="hover:opacity-60">
+                  <Link href={author.facebook} className="hover:opacity-60">
                     <FacebookIcon className="h-6" />
-                  </a>
+                  </Link>
                 )}
                 {author.email && (
-                  <a href={author.email} className="hover:opacity-60">
+                  <Link href={author.email} className="hover:opacity-60">
                     <MailIcon2 className="h-4" />
-                  </a>
+                  </Link>
                 )}
               </div>
             </div>
