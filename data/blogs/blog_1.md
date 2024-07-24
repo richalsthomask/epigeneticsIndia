@@ -1,6 +1,6 @@
 ---
 title: First Blog
-image: https://i.ibb.co/Cnwd4q6/image-01.jpg
+image: /Screenshot 2024-07-22 162536.png
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 author: krishnadas_t_v
 tags: ["Cryptocurrency"]

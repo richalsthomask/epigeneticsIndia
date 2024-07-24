@@ -16,8 +16,8 @@ export default function HeroImage({}) {
 
   return (
     <div className="relative w-full">
-      <div className="relative bg-yellow-50 min-h-screen">
-        <div className="container m-auto px-6 pt-32 md:px-12 lg:pt-[4.8rem] lg:px-7">
+      <div className="relative min-h-screen">
+        <div className="container max-w-screen-xl m-auto px-6 pt-32 md:px-12 lg:pt-[4.8rem] lg:px-7">
           <div className="flex items-center flex-wrap px-2 md:px-0">
             <div className="relative lg:w-6/12 lg:py-24 xl:py-32 flex flex-col gap-7">
               <h1 className="flex flex-row gap-4 font-bold text-5xl text-yellow-900 md:text-6xl">

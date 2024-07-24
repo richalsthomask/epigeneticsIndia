@@ -22,12 +22,7 @@ export default function Header({ className }) {
     <div className="w-full absolute z-10">
       <div className="lg:hidden flex flex-row justify-between items-center gap-4 w-full py-5 px-5 border-b">
         <Link href="/" className="cursor-pointer">
-          <Image
-            src="/helpsquad-logo-orange-navy.png"
-            alt="Logo"
-            width="130"
-            height="36"
-          />
+          <Image src="/logo.png" alt="Logo" width="130" height="36" />
         </Link>
         {pathname !== "/blog" && <BlogSearch />}
         <div
@@ -55,14 +50,15 @@ export default function Header({ className }) {
           className
         }
       >
-        <div className="container w-full mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center md:items-end justify-between gap-5">
+        <div className="container w-full mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center md:items-start justify-between gap-5">
           <Link href="/">
             <div className="flex title-font cursor-pointer font-medium items-center text-gray-900 mb-4 lg:mb-0 ">
               <Image
-                src="/helpsquad-logo-orange-navy.png"
+                src="/logo.png"
                 alt="Logo"
-                width="155"
-                height="43"
+                width="180"
+                height="60"
+                className="-mt-10"
               />
             </div>
           </Link>

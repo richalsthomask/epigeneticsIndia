@@ -1,6 +1,6 @@
 ---
 title: Second Blog
-image: https://i.ibb.co/Y23YC07/image-02.jpg
+image: /Screenshot 2024-07-22 162610.png
 description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 author: krishnadas_t_v
 tags: ["something"]

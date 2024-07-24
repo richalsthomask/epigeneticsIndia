@@ -9,7 +9,7 @@ export default function Location(data) {
     <div className="w-full h-full">
       <Head>
         <title>ascas</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
         <meta name="description" content={"asc"} />
       </Head>
       <div

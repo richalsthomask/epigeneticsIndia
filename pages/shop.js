@@ -15,7 +15,7 @@ export default function Home() {
           name="description"
           content="EpigeneticsIndia handyman service has been servicing Los Angeles, San Francisco and Orange County for over 12 years. Whether you need a remodel or home repair, EpigeneticsIndia has you covered."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Header />
       <div className="min-h-screen min-w-full mx-auto">
