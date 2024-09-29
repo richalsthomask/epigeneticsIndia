@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function BlogCard({
-  date,
+  date_added,
   title,
   slug,
   tags,
@@ -20,7 +20,7 @@ export default function BlogCard({
         </div>
         <div>
           <span className="text-xs leading-loose text-gray-500">
-            {new Date(date).toDateString()}
+            {new Date(date_added).toDateString()}
           </span>
           <h3>
             <HighlightedText
@@ -37,7 +37,7 @@ export default function BlogCard({
             />
           </div>
           <div className="flex flex-row items-center gap-3 flex-wrap">
-            {tags.map((val, index) => (
+            {tags?.map((val, index) => (
               <span
                 key={index}
                 className="py-2 text-green-700 inline-flex items-center justify-center mb-2 text-sm"

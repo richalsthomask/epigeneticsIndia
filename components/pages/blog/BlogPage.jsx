@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function BlogPage({ blog, author }) {
   return (
-    <div className="mt-40 max-w-screen-lg mx-auto">
+    <div className="mt-40 mb-16 max-w-screen-lg mx-auto">
       <main className="mt-10">
         <div className="mb-4 md:mb-0 w-full mx-auto relative">
           <div className="px-4 lg:px-0">

@@ -7,12 +7,13 @@ export default function BlogList({ blogs }) {
   const [search, setSearch] = useState("");
   const filteredBlogPosts = blogs.filter((frontMatter) => {
     const searchContent =
+      "" +
       frontMatter.title +
       frontMatter.description +
       frontMatter.author +
       frontMatter.date +
-      frontMatter.tags.join(" ");
-    return searchContent.toLowerCase().includes(search.toLowerCase());
+      frontMatter.tags?.join(" ");
+    return searchContent?.toLowerCase().includes(search.toLowerCase());
   });
 
   useEffect(() => {
